@@ -114,9 +114,24 @@ html[dir="ltr"] .modal-text{text-align:left}
 .extra-label{font-size:.65rem;font-weight:700;color:var(--muted)}
 .extra-val{font-family:var(--f-en);font-size:.95rem;font-weight:800;color:var(--ink);direction:ltr;text-align:start;overflow-wrap:anywhere}
 
+/* Support Section Styles */
+.support-section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;gap:12px;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.support-btn-main{width:100%;padding:14px;border-radius:16px;border:1px solid rgba(59,130,246,0.4);background:linear-gradient(135deg,rgba(59,130,246,0.15),rgba(37,99,235,0.25));color:var(--blue);font:inherit;font-weight:800;cursor:pointer;font-size:0.95rem;box-shadow:0 6px 16px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s}
+.support-btn-main:hover{background:var(--blue);color:#fff}
+.support-options{display:grid;gap:8px;animation:fadeIn .2s ease}
+.support-option-btn{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:700;font-size:0.88rem;cursor:pointer;text-align:start;display:flex;align-items:center;justify-content:space-between;transition:all .2s}
+.support-option-btn:hover{background:var(--blue-light);border-color:var(--blue);color:var(--blue)}
+.support-option-btn svg{width:16px;height:16px;color:var(--muted);flex:none}
+.support-option-btn:hover svg{color:var(--blue)}
+.support-msg{margin:0;text-align:center;font-weight:700;font-size:0.85rem}
+.support-custom-box{display:grid;gap:8px;margin-top:6px}
+.support-textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--ink);padding:10px 12px;font:inherit;font-size:0.85rem;resize:vertical;min-height:75px}
+.support-textarea:focus{border-color:var(--blue);outline:none}
+.support-send-btn{background:var(--blue);color:#fff;border:0;border-radius:10px;padding:10px;font:inherit;font-weight:800;font-size:0.85rem;cursor:pointer;transition:background .2s}
+.support-send-btn:hover{background:var(--blue-dark)}
+
 /* WhatsApp Button Section */
-.whatsapp-section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;gap:12px;box-shadow:0 4px 20px rgba(0,0,0,.4)}
-.whatsapp-btn{width:100%;padding:14px;border-radius:16px;border:1px solid rgba(37,211,102,0.4);background:linear-gradient(135deg,rgba(37,211,102,0.15),rgba(18,140,126,0.25));color:var(--wa);font:inherit;font-weight:800;cursor:pointer;font-size:0.95rem;box-shadow:0 6px 16px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;transition:all .2s}
+.whatsapp-btn{width:100%;padding:14px;border-radius:16px;border:1px solid rgba(37,211,102,0.4);background:linear-gradient(135deg,rgba(37,211,102,0.15),rgba(18,140,126,0.25));color:var(--wa);font:inherit;font-weight:800;cursor:pointer;font-size:0.95rem;box-shadow:0 6px 16px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;transition:all .2s;margin-top:8px}
 .whatsapp-btn:hover{background:var(--wa);color:#fff}
 .whatsapp-btn svg{width:22px;height:22px;fill:currentColor}
 
@@ -137,7 +152,6 @@ html[dir="ltr"] .modal-text{text-align:left}
             <path d="M117.678,102.053 c-2.037,-16.906 11.458,-25.26 12.016,-25.618 c-6.55,-9.578 -16.745,-10.876 -20.316,-11.168 c-8.65,-0.902 -16.924,5.088 -21.309,5.088 c-4.404,0 -11.237,-4.96 -18.455,-4.832 c-9.489,0.178 -18.232,5.516 -23.102,14.004 c-9.873,17.135 -2.529,42.455 7.021,56.328 c4.814,6.974 10.556,14.777 18.093,14.492 c7.284,-0.292 10.038,-4.707 18.847,-4.707 c8.775,0 11.432,4.707 19.204,4.553 c7.872,-0.254 13.01,-7.433 17.794,-14.429 c5.636,-8.188 7.954,-16.108 8.083,-16.517 C118.411,103.58 117.678,102.053 117.678,102.053 Z"/>
             <path d="M102.404,36.568 c4.116,-4.996 6.879,-11.944 6.126,-18.868 c-5.922,0.241 -13.084,3.948 -17.332,8.944 c-3.805,4.444 -7.139,11.536 -6.079,18.368 C91.076,45.344 98.118,41.42 102.404,36.568 Z"/>
           </g>
-          <!-- AS Text Logo -->
           <text x="180" y="275" fill="#111827" font-family="Arial, sans-serif" font-weight="900" font-size="160" text-anchor="middle">A</text>
           <text x="330" y="275" fill="#007aff" font-family="Arial, sans-serif" font-weight="900" font-size="150" text-anchor="middle">S</text>
           <text x="250" y="360" fill="#111827" font-family="Arial, sans-serif" font-weight="900" font-size="70" text-anchor="middle" letter-spacing="4">iD</text>
@@ -229,13 +243,8 @@ html[dir="ltr"] .modal-text{text-align:left}
     <div id="box"></div>
   </section>
 
-  <!-- WhatsApp Button Section -->
-  <div class="whatsapp-section">
-    <a href="https://wa.me/9647506781320" target="_blank" class="whatsapp-btn">
-      <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-      <span>07506781320 - WhatsApp</span>
-    </a>
-  </div>
+  <!-- Support Section & WhatsApp Button Combined -->
+  <div id="supportContainer"></div>
 
   <footer class="foot">
     <span>© <b>AS iD Store</b></span>
@@ -245,21 +254,34 @@ html[dir="ltr"] .modal-text{text-align:left}
 
 <script>
 const SUPABASE_API = 'https://foplvmfppbngywmxmqof.supabase.co/rest/v1/rpc/scan';
+const REPORT_API = 'https://foplvmfppbngywmxmqof.supabase.co/rest/v1/rpc/report_qr';
 const KEY = 'sb_publishable_HFxscwwTWxXEspJEnpJgFA_Ib4A5cAQ';
 
 const T = {
   ku: { dir:'rtl', code:'KU', title:'زانیاری کارت', checking:'پشکنین…',
         email:'Email', password:'Password', otpTitle:'کۆدی دڵنیایی (OTP)', otpWait:'بۆ بینینی کۆد، دوگمەی نوێکردنەوە دابگرە...', copy:'کۆپی کردن', copied:'کۆپی کرا ✓',
         updateBtn:'نوێکردنەوە', invalid:'ئەم QR کۆدە دروست نییە یاخود بەردەست نییە', net:'پەیوەندی نەکرا. ئینتەرنێت بپشکنە.', error:'هەڵە', thanks:'سوپاس بۆ متمانەکەت', modalBtn:'تێگەیشتم، پیشاندانی زانیارییەکان',
-        warningTitle:'⚠️ ئاگادارییەکی گرنگ', warningText:'تکایە بەهیچ شێوەیەک ئەم Apple ID له Settings ی موبایلەکەت داخل مەکە! تەنها لە App Store داخل بکە.<br><br>کاتی داخلکردنی، تکایە ڕاستەوخۆ بیخەرە سەر ژمارەی موبایلی خۆت.' },
+        warningTitle:'⚠️ ئاگادارییەکی گرنگ', warningText:'تکایە بەهیچ شێوەیەک ئەم Apple ID له Settings ی موبایلەکەت داخل مەکە! تەنها لە App Store داخل بکە.<br><br>کاتی داخلکردنی، تکایە ڕاستەوخۆ بیخەرە سەر ژمارەی موبایلی خۆت.',
+        supOpen:'پەیوەندی بە سەپۆرت (Support)', supTitle:'تکایە کێشەکەت دیاری بکە:',
+        opt1:'ئەم Apple ID کار ناکات', opt2:'پاسۆرد یان ئیمەیڵ هەڵەیە', opt3:'پرسیارێکی تری هەیە / کێشەی تر',
+        supWait:'چاوەڕێ بکە...', supDone:'✅ داواکارییەکەت نێردرا بۆ سەپۆرت. بە زوویی چارەسەر دەکرێت.', supAlready:'داواکارییەکەت پێشتر نێردراوە.', supErr:'نەنێردرا، دووبارە هەوڵ بدەرەوە.',
+        customPlaceholder:'پرسیار یان کێشەکەت لێرە بنووسە...' },
   ar: { dir:'rtl', code:'AR', title:'معلومات البطاقة', checking:'جارٍ التحقق…',
         email:'Email', password:'Password', otpTitle:'رمز التحقق (OTP)', otpWait:'لإظهار الرمز، اضغط على زر التحديث...', copy:'نسخ', copied:'تم النسخ ✓',
         updateBtn:'تحديث', invalid:'رمز QR هذا غير صالح أو غير موجود', net:'تعذّر الاتصال. تحقّق من الإنترنت.', error:'خطأ', thanks:'شكراً لثقَتِك', modalBtn:'فهمت، عرض المعلومات',
-        warningTitle:'⚠️ تنبيه مهم', warningText:'يرجى عدم إدخال Apple ID هذا في إعدادات الهاتف (Settings) نهائياً! قم بإدخاله في App Store فقط.<br><br>عند الإدخال، يرجى وضعه مباشرة على رقم هاتفك.' },
+        warningTitle:'⚠️ تنبيه مهم', warningText:'يرجى عدم إدخال Apple ID هذا في إعدادات الهاتف (Settings) نهائياً! قم بإدخاله في App Store فقط.<br><br>عند الإدخال، يرجى وضعه مباشرة على رقم هاتفك.',
+        supOpen:'الاتصال بالدعم (Support)', supTitle:'يرجى تحديد مشكلتك:',
+        opt1:'هذا Apple ID لا يعمل', opt2:'كلمة المرور أو البريد خطأ', opt3:'دي سؤال آخر / مشكلة أخرى',
+        supWait:'جاري الانتظار...', supDone:'✅ تم إرسال طلبك إلى الدعم. سيتم الحل قريباً.', supAlready:'تم إرسال طلبك مسبقاً.', supErr:'فشل الإرسال، حاول مجدداً.',
+        customPlaceholder:'اكتب سؤالك أو مشكلتك هنا...' },
   en: { dir:'ltr', code:'EN', title:'Card details', checking:'Verifying…',
         email:'Email', password:'Password', otpTitle:'Verification Code (OTP)', otpWait:'To see the code, click the update button...', copy:'Copy', copied:'Copied ✓',
         updateBtn:'Refresh', invalid:'This QR code is not valid or available', net:'Couldn’t connect. Check your internet.', error:'Error', thanks:'Thank you for your trust', modalBtn:'Got it, show details',
-        warningTitle:'⚠ Important Warning', warningText:'Please do NOT sign in with this Apple ID in your phone Settings! Sign in via App Store only.<br><br>When signing in, please use your own mobile phone number directly.' }
+        warningTitle:'⚠ Important Warning', warningText:'Please do NOT sign in with this Apple ID in your phone Settings! Sign in via App Store only.<br><br>When signing in, please use your own mobile phone number directly.',
+        supOpen:'Contact Support', supTitle:'Please select your issue:',
+        opt1:'This Apple ID does not work', opt2:'Password or Email is incorrect', opt3:'I have another question / issue',
+        supWait:'Please wait...', supDone:'✅ Request sent to support. It will be resolved soon.', supAlready:'Your request was already submitted.', supErr:'Failed to send, try again.',
+        customPlaceholder:'Write your question or issue here...' }
 };
 
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k, v){ try { localStorage.setItem(k, v); } catch(e){} } };
@@ -297,6 +319,7 @@ if (code) {
 }
 
 const box = document.getElementById('box');
+const supportContainer = document.getElementById('supportContainer');
 const langSelectModal = document.getElementById('langSelectModal');
 const warningModal = document.getElementById('warningModal');
 const closeModalBtn = document.getElementById('closeModalBtn');
@@ -341,10 +364,12 @@ function render(){
 
   if (state.kind === 'loading') {
     box.innerHTML = '<div style="height:90px;background:var(--bg);border-radius:12px"></div>';
+    supportContainer.innerHTML = '';
     return;
   }
   if (state.kind === 'error') {
     box.innerHTML = '<div class="err">' + t[state.msg] + '</div>';
+    supportContainer.innerHTML = '';
     return;
   }
 
@@ -464,6 +489,42 @@ function render(){
     }
   }
 
+  /* Render both Support System and WhatsApp Button together */
+  supportContainer.innerHTML = `
+    <div class="support-section" id="supportBox">
+      <button type="button" id="supportToggleBtn" class="support-btn-main">
+        <svg style="width:18px;height:18px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636l3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <span>${t.supOpen}</span>
+      </button>
+      <div id="supportOptionsList" class="support-options" style="display:none">
+        <div style="font-size:0.82rem;font-weight:700;color:var(--muted);text-align:center">${t.supTitle}</div>
+        <button type="button" class="support-option-btn" data-sup-opt="1">
+          <span>${t.opt1}</span>
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <button type="button" class="support-option-btn" data-sup-opt="2">
+          <span>${t.opt2}</span>
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <button type="button" class="support-option-btn" data-sup-opt="3" id="opt3Btn">
+          <span>${t.opt3}</span>
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <div id="supportCustomBox" class="support-custom-box" style="display:none">
+          <textarea id="supportCustomInput" class="support-textarea" placeholder="${t.customPlaceholder}"></textarea>
+          <button type="button" id="supportSendCustomBtn" class="support-send-btn">ناردنی پرسیار</button>
+        </div>
+      </div>
+      <p id="supportMsg" class="support-msg" style="display:none"></p>
+
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/9647506781320" target="_blank" class="whatsapp-btn">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>07506781320 - WhatsApp</span>
+      </a>
+    </div>
+  `;
+
   box.querySelectorAll('.copy[data-v]').forEach(b => b.onclick = () => {
     const done = () => { b.textContent = t.copied; b.classList.add('done'); setTimeout(() => { b.textContent = t.copy; b.classList.remove('done'); }, 1600); };
     if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.v).then(done).catch(() => {});
@@ -508,6 +569,76 @@ async function fetchOtp(url, isManual = false) {
       };
     }
   } catch(e) {}
+}
+
+document.addEventListener('click', async e => {
+  const supportBox = e.target.closest('#supportBox');
+  if (!supportBox) return;
+
+  const toggleBtn = e.target.closest('#supportToggleBtn');
+  const optionsList = document.getElementById('supportOptionsList');
+  if (toggleBtn && optionsList) {
+    optionsList.style.display = optionsList.style.display === 'none' ? 'grid' : 'none';
+    return;
+  }
+
+  const opt3Btn = e.target.closest('#opt3Btn');
+  const customBox = document.getElementById('supportCustomBox');
+  if (opt3Btn && customBox) {
+    customBox.style.display = customBox.style.display === 'none' ? 'grid' : 'none';
+    return;
+  }
+
+  const sendCustomBtn = e.target.closest('#supportSendCustomBtn');
+  if (sendCustomBtn) {
+    const input = document.getElementById('supportCustomInput');
+    const customText = input ? input.value.trim() : '';
+    if (!customText) return;
+    submitSupportReport('پرسیار/کێشەی تر: ' + customText);
+    return;
+  }
+
+  const optBtn = e.target.closest('[data-sup-opt]');
+  if (!optBtn || optBtn.disabled) return;
+
+  const optNum = optBtn.getAttribute('data-sup-opt');
+  if (optNum === '3') return;
+
+  let noteText = 'کێشە: ئەم Apple ID کار ناکات';
+  if (optNum === '2') noteText = 'کێشە: پاسۆرد یان ئیمەیڵ هەڵەیە';
+
+  submitSupportReport(noteText);
+});
+
+async function submitSupportReport(noteText) {
+  const optionsList = document.getElementById('supportOptionsList');
+  const msgEl = document.getElementById('supportMsg');
+  
+  if (optionsList) optionsList.style.display = 'none';
+  if (msgEl) {
+    msgEl.style.display = 'block';
+    msgEl.style.color = '';
+    msgEl.textContent = T[lang || 'ku'].supWait;
+  }
+
+  try {
+    const r = await fetch(REPORT_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', apikey: KEY, Authorization: 'Bearer ' + KEY },
+      body: JSON.stringify({ p_code: code, p_note: noteText })
+    }).then(res => res.json());
+
+    if (!r.ok) throw 0;
+    if (msgEl) {
+      msgEl.style.color = 'var(--ok)';
+      msgEl.textContent = r.already ? T[lang || 'ku'].supAlready : T[lang || 'ku'].supDone;
+    }
+  } catch(err) {
+    if (msgEl) {
+      msgEl.style.color = 'var(--bad)';
+      msgEl.textContent = T[lang || 'ku'].supErr;
+    }
+  }
 }
 
 const langBtn = document.getElementById('langBtn'), langMenu = document.getElementById('langMenu');
